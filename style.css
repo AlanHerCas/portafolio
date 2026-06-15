@@ -1,0 +1,211 @@
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+body.dark-mode{
+    background-color: #0f172a;
+    color: #e5e7eb;
+}
+
+/* Navbar */
+.navbar{
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+body.dark-mode .navbar{
+    background-color: #111827 !important;
+}
+
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#themeToggle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+}
+
+#themeToggle img{
+    width: 26px;
+    height: 26px;
+    display: block;
+}
+
+/* Secciones */
+section{
+    padding: 90px 0;
+}
+
+body.dark-mode section{
+    color: #e5e7eb;
+}
+
+body.dark-mode #sobre-mi,
+body.dark-mode #contacto{
+    background-color: #111827 !important;
+}
+
+body.dark-mode #proyectos,
+body.dark-mode #inicio{
+    background-color: #0f172a;
+}
+
+body.dark-mode a,
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link{
+    color: #e5e7eb;
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link:focus{
+    color: #93c5fd;
+}
+
+/* Hero */
+#inicio h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#inicio h3{
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+#inicio p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+
+/* Sobre mí */
+#sobre-mi img{
+    max-width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
+}
+
+/* Cards */
+.card{
+    border: none;
+    border-radius: 15px;
+    transition: .3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+body.dark-mode .card{
+    background-color: #111827;
+    color: #e5e7eb;
+    box-shadow: 0 8px 20px rgba(0,0,0,.35);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+.card-title{
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+body.dark-mode .card-title{
+    color: #60a5fa;
+}
+
+/* Formulario */
+form{
+    max-width: 700px;
+    margin: auto;
+}
+
+.form-control{
+    border-radius: 10px;
+}
+
+body.dark-mode .form-control{
+    background-color: #0b1220;
+    border-color: #334155;
+    color: #e5e7eb;
+}
+
+body.dark-mode .form-control:focus{
+    background-color: #0b1220;
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 .2rem rgba(96, 165, 250, .25);
+    color: #e5e7eb;
+}
+
+body.dark-mode .form-label,
+body.dark-mode .form-text{
+    color: #cbd5e1;
+}
+
+.btn{
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+
+body.dark-mode .btn-primary{
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+body.dark-mode .btn-outline-light{
+    color: #e5e7eb;
+    border-color: #e5e7eb;
+}
+
+body.dark-mode .btn-outline-light:hover{
+    background-color: #e5e7eb;
+    color: #111827;
+}
+
+/* Footer */
+footer{
+    font-size: .95rem;
+}
+
+body.dark-mode footer{
+    background-color: #020617 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+
+    #inicio{
+        text-align: center;
+    }
+
+    #inicio h1{
+        font-size: 2.3rem;
+    }
+
+    #inicio img{
+        margin-top: 30px;
+        width: 220px;
+    }
+
+    #sobre-mi{
+        text-align: center;
+    }
+
+    #sobre-mi img{
+        margin-bottom: 25px;
+    }
+}
